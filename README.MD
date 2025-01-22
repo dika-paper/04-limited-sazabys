@@ -2,6 +2,4 @@
 
 `npm i`
 
-Terminal I: `npm run watch`
-
-Terminal II: `npm run dev`
+`npm run test`
