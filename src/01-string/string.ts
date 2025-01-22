@@ -1,4 +1,6 @@
 /**
+ * ⏰ TIME LIMIT: 3 Minutes
+ *
  * Counts the number of vowels in a given string.
  *
  * @example
@@ -14,6 +16,8 @@ export function countVowels(input: string): number {
 }
 
 /**
+ * ⏰ TIME LIMIT: 5 Minutes
+ *
  * Checks if two strings are anagrams of each other.
  *
  * An anagram is a word or phrase formed by rearranging the letters

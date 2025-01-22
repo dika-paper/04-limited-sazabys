@@ -1,4 +1,6 @@
 /**
+ * ⏰ TIME LIMIT: 5 Minutes
+ *
  * Breaks an array into an array of arrays of a given size.
  *
  * @example
@@ -13,6 +15,8 @@ export function chunkArray(arr: number[], size: number): number[][] {
 }
 
 /**
+ * ⏰ TIME LIMIT: 5 Minutes
+ *
  * Finds all common elements between two arrays.
  *
  * @example

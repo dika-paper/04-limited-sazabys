@@ -1,3 +1,5 @@
+// ⏰ TIME LIMIT: 22 Minutes
+
 export class ListNode<T> {
   public value: T;
   public next: ListNode<T> | null;
