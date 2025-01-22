@@ -1,6 +1,86 @@
 /**
  *
  * CHALLENGE I
+ * STRING
+ *
+ */
+
+/**
+ * Capitalizes the first letter of a given string.
+ *
+ * @param input - The string to capitalize
+ * @returns A new string with the first letter capitalized
+ */
+
+function capitalizeFirstLetter(input: string): string {
+  return "";
+}
+
+// Example Usage
+console.log(capitalizeFirstLetter("hello")); // Output: "Hello"
+console.log(capitalizeFirstLetter("world")); // Output: "World"
+console.log(capitalizeFirstLetter("")); // Output: ""
+
+// --------------------------------------------------------------------------------
+console.log("---------------------------------------");
+// --------------------------------------------------------------------------------
+
+/**
+ * Counts the number of vowels in a given string.
+ *
+ * @example
+ * countVowels("The quick brown fox") // Output: 3
+ * countVowels("Hello World") // Output: 2
+ * countVowels("") // Output: 0
+ *
+ * @param input - The string to count the vowels of
+ * @returns The number of vowels in the string
+ */
+function countVowels(input: string): number {
+  return 0;
+}
+
+// Example Usage
+console.log(countVowels("TypeScript")); // Output: 3
+console.log(countVowels("Programming")); // Output: 3
+console.log(countVowels("xyz")); // Output: 0
+
+// --------------------------------------------------------------------------------
+console.log("---------------------------------------");
+// --------------------------------------------------------------------------------
+
+/**
+ * Checks if two strings are anagrams of each other.
+ *
+ * An anagram is a word or phrase formed by rearranging the letters
+ * of a different word or phrase, typically using all the original letters exactly once.
+ *
+ * @example
+ * isAnagram("listen", "silent") // true
+ * isAnagram("Hello, World!", "dlroW ,olleH") // true
+ * isAnagram("TypeScript", "JavaScript") // false
+ *
+ * @param str1 - The first string to compare
+ * @param str2 - The second string to compare
+ * @returns A boolean indicating whether the two strings are anagrams
+ */
+
+function isAnagram(str1: string, str2: string): boolean {
+  return false;
+}
+
+// Example Usage
+console.log(isAnagram("listen", "silent")); // Output: true
+console.log(isAnagram("Hello, World!", "dlroW ,olleH")); // Output: true
+console.log(isAnagram("TypeScript", "JavaScript")); // Output: false
+
+// --------------------------------------------------------------------------------
+console.log("---------------------------------------");
+// --------------------------------------------------------------------------------
+
+/**
+ *
+ * CHALLENGE II
  * ARRAY
  *
  */
@@ -32,12 +112,12 @@ const tests1: Array<[number[], number]> = [
   [[1, 2, 3], 6],
 ];
 
-tests1.forEach((t) => {
-  console.log("chunkArray: \n", {
-    input: t[0],
-    output: chunkArray(t[0], t[1]),
-  });
-});
+// tests1.forEach((t) => {
+//   console.log("chunkArray: \n", {
+//     input: t[0],
+//     output: chunkArray(t[0], t[1]),
+//   });
+// });
 
 // --------------------------------------------------------------------------------
 console.log("---------------------------------------");
@@ -65,16 +145,16 @@ function removeDuplicates(arr: number[]) {
 const tests2: number[][] = [
   [1, 2, 3, 4, 5],
   [1, 1, 1, 1, 1, 1],
-  [1, 2, 3],
+  [1, 2, 3, 2, 3],
 ];
 
 // test cases
-tests2.forEach((t) => {
-  console.log("removeDuplicates: \n", {
-    input: t,
-    output: removeDuplicates(t),
-  });
-});
+// tests2.forEach((t) => {
+//   console.log("removeDuplicates: \n", {
+//     input: t,
+//     output: removeDuplicates(t),
+//   });
+// });
 
 // --------------------------------------------------------------------------------
 console.log("---------------------------------------");
@@ -103,16 +183,16 @@ function findCommonElements(arr1: number[], arr2: number[]) {
 // test cases
 const tests3 = [
   [[], []],
-  [[1], [1]],
-  [[1], [2]],
+  [[1], [1, 2, 3]],
+  [[2], [2, 2, 2]],
 ];
 
-tests3.forEach((t) => {
-  console.log("findCommonElements: \n", {
-    input: t[0],
-    output: findCommonElements(t[0], t[1]),
-  });
-});
+// tests3.forEach((t) => {
+//   console.log("findCommonElements: \n", {
+//     input: t[0],
+//     output: findCommonElements(t[0], t[1]),
+//   });
+// });
 
 // --------------------------------------------------------------------------------
 console.log("---------------------------------------");
@@ -120,7 +200,7 @@ console.log("---------------------------------------");
 
 /**
  *
- * CHALLENGE II
+ * CHALLENGE III
  * DATA STRUCTURES
  *
  */
@@ -214,4 +294,4 @@ list.append(3);
 list.prepend(0);
 list.remove(2);
 
-console.log(list.toArray()); // Should output: [0, 1, 3]
+// console.log(list.toArray()); // Should output: [0, 1, 3]
